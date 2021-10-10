@@ -25,6 +25,19 @@ def list_creater(lst_sum, elem_amount, min_v, max_v):
             del lst[-1]
             continue
         i += 1
+        """
+        При таком if задача решается,
+        но последнее число принципально больше всех остальных, например:
+        [
+        474, 198, 44, 63, 140, 303, 51, 47, 443,495, 445,
+        167, 457, 473, 146, 276, 261, 23, 212, 5282
+        ]
+        Зато скорость решения колосальная!
+        """
+        # if i == elem_amount - 1:
+        #     lst.append(lst_sum - sum(lst))
+        #     break
+        
         if i == elem_amount:
             break
 
